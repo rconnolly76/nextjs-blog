@@ -2,11 +2,13 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+// import { getSortedPostsData } from '../lib/chposts'
 import Link from 'next/link'
 import Date from '../components/date'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  // const allPostsData = getSortedPostsData()
+  const allPostsData = await getSortedPostsData()
   return {
     props: {
       allPostsData
@@ -15,6 +17,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  console.log('entering the Home function')
+
   return (
     <Layout home>
       <Head>
@@ -23,7 +27,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Something to do while I really want to be making ramen!</p>
         <p>
-          (This is a sample website - for now static posts, but next off Sitecore CaaS.  Learned using this: {' '}
+          (This is a sample website - for now static posts, but next off CaaS.  Learned using this: {' '}
           <a href="https://nextjs.org/learn"> Next.js tutorial</a>.)
         </p>
       </section>
