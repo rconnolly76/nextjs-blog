@@ -3,7 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Roger Connolly'
+const name = 'CaaS and Headless for Dummies'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
