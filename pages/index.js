@@ -23,8 +23,8 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Something to do while I really want to be making ramen!</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          (This is a sample website - for now static posts, but next off Sitecore CaaS.  Learned using this: {' '}
+          <a href="https://nextjs.org/learn"> Next.js tutorial</a>.)
         </p>
       </section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
