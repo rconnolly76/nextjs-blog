@@ -25,10 +25,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Something to do while I really want to be making ramen! - still</p>
+        <p>Something to do when I really want to be making ramen!</p>
         <p>
-          (This is a sample website - for now static posts, but coming soon off Experience Edge.  Learned using this: {' '}
-          <a href="https://nextjs.org/learn"> Next.js tutorial</a>.)
+          (This is a sample website - for now static posts, but coming soon off some fancy API somewhere.  Check this to learn: {' '}
+          <a href="https://nextjs.org/learn"> Next.js</a>.)
         </p>
       </section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
