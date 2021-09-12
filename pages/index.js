@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Something to do while I really want to be making ramen!</p>
+        <p>Something to do while I really want to be making ramen! - still</p>
         <p>
           (This is a sample website - for now static posts, but coming soon off Experience Edge.  Learned using this: {' '}
           <a href="https://nextjs.org/learn"> Next.js tutorial</a>.)
